@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2</title>
+
+  <!-- link to the external css file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+  <div class="intro">
+    <!-- Some inline styles -->
+    <h1 style="text-align: center; font-size: 3em;">Simple Logo Language</h1>
+  </div>
+
+  <div class="floor_container">
+    <!-- this div holds the 25x25 floor inside itself -->
+    <div id="floor"></div>
+
+    <!-- this div holds the control section of the turtle -->
+    <div class="control">
+
+      <div class="instruction">
+
+      </div>
+
+      <!-- this div holds information about current direction and pen status -->
+      <div class="status">
+        <p>Current Direction:  <span id="dir">Right</span></p>
+        <p>Current Pen Status:  <span id="penStatus">Up</span></p>
+      </div>
+
+      <!-- this div holds four buttons that are used to change the direction of the turtle -->
+      <div class="dir_btn btn_container">
+        <p>Select Direction:</p>
+        <div class="up_btn">
+          <button class="btn" id="up" type="button">up</button> 
+        </div>
+        <div class="rest_btn">
+          <button class="btn" id="left" type="button">left</button> 
+          <button class="btn" id="down" type="button">down</button> 
+          <button class="btn selected" id="right" type="button">right</button> 
+        </div>
+        
+        <p class="help">(?): Press the desired button you want to change the direction to.</p>
+      </div>
+
+      <!-- this div holds the move button -->
+      <div class="move_btn btn_container">
+        <span>Move: </span>
+        <button class="btn one_btn" id="move" type="button">Move</button>
+        <p class="help">(?): Move button moves the turtle 1 square to it's current direction.</p>
+
+      </div>
+
+      <!-- this div holds two buttons that are used to change the pen status of the turtle -->
+      <div class="pen_btn btn_container">
+        <span>Pen Status: </span>
+        <button class="btn selected" id="penUp" type="button">Up</button>
+        <button class="btn" id="penDown" type="button">Down</button>
+        <p class="help">(?): Press which pen postion you want.</p>
+      </div>
+
+      <!-- this div holds the reset button, by which resets everything -->
+      <div class="reset_btn btn_container">
+        <span>Reset: </span>
+        <button class="btn one_btn" id="reset" type="button">Reset</button>
+        <p class="help">(?): Press this button to reset everything.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- link to the javascript file -->
+  <script src="script.js"></script>
+</body>
+</html>

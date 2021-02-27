@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Ubuntu&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #AEBF6F;
+  color: #0D0D0D;
+}
+
+.floor_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img {
+  margin-right: 5px;
+  height: 25px;
+  width: 35px;
+}
+
+.up_btn, .rest_btn {
+  display: flex;
+  justify-content: center;
+}
+
+
+.btn {
+  height: 4em;
+  width: 6em;
+  border-radius: .7em;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #D9B07E; 
+}
+
+.one_btn {
+  background-color: #D9B07E;
+  width: 100%;
+}
+
+.one_btn:hover {
+  background-color: #8C673A;
+}
+
+.pen_btn {
+  margin-top: 1em;
+}
+
+.selected {
+  background-color: #8C673A;
+  color: #F2EA7E;
+}
+
+.btn_container, .status {
+  border: 2px dashed #D9B07E;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.btn_container p {
+  margin-bottom: .5em;
+}
+
+.help {
+  margin: 10px;
+  opacity: 0.5;
+}
+
+.status span {
+  color: #8C673A;
+  
+}
