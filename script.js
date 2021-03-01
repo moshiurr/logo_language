@@ -162,6 +162,10 @@ function penChangeUp() {
 function penChangeDown() {
   penStatus = 1;
   document.getElementById('penStatus').innerText = 'Down';
+
+  //current position gets filled with color
+  curTemp_photo = filled_photo;
+
   if(penUp.classList.contains('selected')){
     penUp.classList.remove('selected');
     penDown.classList.add('selected');
